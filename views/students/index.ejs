@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro To Express Lab, Baby!</title>
+</head>
+<body>
+  <h1>Todos</h1>
+  <% if (error) { %> 
+    <h2><%= error %> </h2>
+  <% } %>
+  <ul>
+    <% students.forEach(function(student) { %>
+    <li>
+      <%= student.text %>
+      - 
+      <%= student.beard ? 'beard' : 'no beard' %>
+    </li> 
+    <% }) %>
+  </ul> 
+</body>
+</html>

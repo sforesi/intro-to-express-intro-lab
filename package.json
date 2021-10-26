@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "intro-to-express-intro-lab",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sforesi/intro-to-express-intro-lab.git"
+  },
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sforesi/intro-to-express-intro-lab/issues"
+  },
+  "homepage": "https://github.com/sforesi/intro-to-express-intro-lab#readme",
+  "description": ""
+}
