@@ -2,8 +2,7 @@
 
 import express from 'express'
 // import the students database
-import { find } from './data/students-db.js'
-
+import * as studentDb from './data/student-db.js'
 // Create Express app
 
 const app = express()
@@ -22,12 +21,12 @@ app.get('/', function (req, res) {
   res.redirect('/home')
 })
 
-app.get('/', function (req, res) {
-  res.send('<h1>Hello, friend</h1>')
+app.get('/home', function (req, res) {
+  res.render('<h1>Hello, friend</h1>')
 })
 
-app.get('/students', function(req, res) {
-  studentsDb.find({}, function(error, students) {
+app.get('/student', function(req, res) {
+  studentDb.find({}, function(error, students) {
     res.render('students/index', {
       students: students,
       error: error
